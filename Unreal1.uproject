@@ -42,6 +42,10 @@
 		{
 			"Name": "MassCrowd",
 			"Enabled": true
+		},
+		{
+			"Name": "CommonUI",
+			"Enabled": true
 		}
 	]
 }

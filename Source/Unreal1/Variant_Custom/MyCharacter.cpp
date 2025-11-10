@@ -6,12 +6,14 @@
 //after those used only in Cpp
 #include "Kismet/KismetSystemLibrary.h"
 
-// Sets default values
+// Sets default values 
 AMyCharacter::AMyCharacter()
 {
 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	DrawDebugSphere(GetWorld(),GetActorLocation(),100.f,12,FColor::Emerald,false, 5.f,(uint8)0U,10.f);
+	
 }
 
 // Called when the game starts or when spawned
@@ -25,9 +27,6 @@ void AMyCharacter::BeginPlay()
 void AMyCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
-
-
 }
 
 
